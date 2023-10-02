@@ -1,0 +1,109 @@
+.hero {
+  padding: 120px 28px;
+  background-color: #043873;
+  display: flex;
+  justify-content: center;
+}
+
+.hero2{
+    background-color: white;
+}
+
+.emptybox {
+  height: 350px;
+  max-width: 550px;
+  width: 100%;
+  background-color: #C4DEFD;
+}
+
+.herobtn button {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4f9cf9;
+  color: white;
+  border: 0;
+  font-size: 16px;
+}
+
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    max-width: 550px;
+    width: 100%;
+    padding: 5px;
+}
+
+.contentbox h2{
+    font-size: 56px;
+    margin: 10px 0;
+    color: white;
+}
+
+.contentbox p{
+    font-size: 15px;
+    color: white;
+}
+
+.herobtn{
+    margin-top: 20px;
+}
+
+.changecolor{
+    background-color: white;
+}
+.changecolor2{
+    background-color: white;
+    flex-direction: row-reverse;
+}
+.black{
+    color: black !important;
+}
+
+.emptybox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:810px){
+    .hero{
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    .emptybox ,.contentbox{
+        max-width: 95%;
+        margin: auto;
+    }
+    .contentbox h2 , .contentbox p{
+        text-align: center;
+        font-size: 50px;
+    }
+    .contentbox p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .herobtn{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media (max-width:576px){
+    .emptybox ,.contentbox{
+        max-width: 95%;
+    }
+    .contentbox h2 , .contentbox p{
+        text-align: center;
+        font-size: 30px;
+    }
+    .contentbox p{
+        text-align: center;
+        font-size: 14px;
+    }
+}
